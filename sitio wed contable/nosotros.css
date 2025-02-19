@@ -1,0 +1,326 @@
+/* Reset de estilos y configuración básica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Asegurar que HTML y BODY ocupen toda la altura de la pantalla */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* HEADER */
+header {
+    background-color: #002b5c;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+/* Logo */
+.logo img {
+    height: 70px;
+    width: auto;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* MENÚ RESPONSIVE */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    flex-grow: 1;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sección Sobre Nosotros */
+.sobre-nosotros {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+.sobre-nosotros h2 {
+    font-size: 2rem;
+    color: #002b5c;
+    margin-bottom: 20px;
+}
+
+.sobre-nosotros p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Contenedor Principal */
+.contenedor-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Misión y Visión */
+.mision-vision {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    color: #002b5c;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Imagen de equipo */
+.equipo-trabajo img {
+    width: 90%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón de contacto */
+.btn-container {
+    margin-top: 30px;
+}
+
+.btn-contacto {
+    background-color: #002b5c;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-contacto:hover {
+    background-color: #004080;
+}
+
+/* FOOTER */
+footer {
+    background-color: #002b5c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de Valores */
+.valores {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+.valores-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.valor {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.valor img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.valor h3 {
+    color: #002b5c;
+}
+
+/* Testimonios */
+.casos-exito {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+.testimonios-container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding: 20px;
+}
+
+.testimonio {
+    display: none;
+    font-size: 1.2rem;
+    color: #444;
+    font-style: italic;
+    padding: 20px;
+}
+
+.testimonio.active {
+    display: block;
+}
+
+.testimonio span {
+    display: block;
+    font-weight: bold;
+    color: #002b5c;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Botones de navegación */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 43, 92, 0.8);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: background 0.3s;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0, 43, 92, 1);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    /* Menú responsive */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #002b5c;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Mostrar menú cuando esté activo */
+    nav ul.active {
+        display: flex;
+    }
+
+    /* Ajustes de diseño */
+    .contenedor-info {
+        flex-direction: column;
+    }
+
+    .mision-vision {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+nav ul li a.active {
+    font-weight: bold;
+    color: #fff; /* Color del texto */
+    background-color: #ffc107;; /* Color de fondo del cuadro */
+    padding: 8px 15px; /* Espaciado interno para hacer el cuadro */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Quitar subrayado */
+    transition: background 0.3s; /* Animación suave */
+}
