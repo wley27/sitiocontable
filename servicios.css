@@ -127,9 +127,13 @@ section {
 
 /* Sección de servicios */
 .servicios {
+    margin-top: 280px; /* Ajuste para evitar que el header fijo la cubra */
     text-align: center;
     padding: 50px 20px;
     background-color: #f9f9f9;
+    padding-top: 20px; /* Agrega espacio extra para mejor separación */
+   
+    
 }
 
 .servicios h2 {
@@ -149,16 +153,13 @@ section {
 /* Tarjetas de servicios */
 .tarjeta {
     background: white;
-    padding: 25px;
+    padding: 20px;
     border-radius: 10px;
-    width: 300px; /* Un tamaño un poco mayor para una mejor visualización */
+    width: 100%; /* Usa todo el ancho disponible */
+    max-width: 320px; /* Limita el tamaño en pantallas grandes */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .tarjeta:hover {
@@ -205,13 +206,20 @@ section {
 /* Estilos responsivos */
 @media (max-width: 768px) {
     .contenedor-servicios {
-        flex-direction: column;
+        flex-direction: column; /* Asegura que las tarjetas estén una debajo de la otra */
         align-items: center;
     }
 
     .tarjeta {
-        width: 90%; /* Adaptar al tamaño de la pantalla */
-        max-width: 300px; /* No hacerlas demasiado grandes */
+        width: 90%; /* Se ajusta al ancho de la pantalla */
+        max-width: 300px; /* Evita que sean demasiado grandes */
+    }
+}
+
+@media (max-width: 480px) {
+    .tarjeta {
+        width: 95%; /* Más ajuste para móviles pequeños */
+        max-width: 250px; /* Reduce un poco el tamaño */
     }
 }
 
@@ -322,3 +330,4 @@ nav ul li a.active {
     text-decoration: none; /* Quitar subrayado */
     transition: background 0.3s; /* Animación suave */
 }
+
