@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Asesoría Contable</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header con menú responsivo -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo de Asesoría Contable">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html"class="active">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="overlay">
+            <h2>Asesoría Contable</h2>
+            <p>Tu mejor aliado en contabilidad y finanzas.</p>
+            <div class="btn-group">
+                <a href="nosotros.html" class="btn">Más sobre nosotros</a>
+                <a href="contacto.html" class="btn">Contáctanos ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-container">
+            <div class="servicio"><h3>Contabilidad General</h3><p>Gestión y organización de tus finanzas.</p></div>
+            <div class="servicio"><h3>Asesorías Contables</h3><p>Soluciones adaptadas a tu negocio.</p></div>
+            <div class="servicio"><h3>Servicios Tributarios</h3><p>Declaraciones fiscales mensuales y anuales.</p></div>
+            <div class="servicio"><h3>Planificación Tributaria</h3><p>Optimización de recursos fiscales.</p></div>
+        </div>
+    </section>
+    <!-- Sección de Estadísticas -->
+    <section class="estadisticas">
+        <div class="stat"><h3 class="counter" data-target="150">0</h3><p>Clientes Satisfechos</p></div>
+        <div class="stat"><h3 class="counter" data-target="10">0</h3><p>Años de Experiencia</p></div>
+        <div class="stat"><h3 class="counter" data-target="99">0</h3><p>% de Éxito en Declaraciones</p></div>
+    </section>
+    <!-- Sección de Testimonios -->
+    <section class="testimonios">
+        <h2>Testimonios de Clientes</h2>
+        <div class="testimonios-container">
+            <div class="testimonial"><p>"Me ayudaron a organizar mis finanzas."</p><h4>Misael Guerrero</h4></div>
+            <div class="testimonial"><p>"Profesionales y confiables."</p><h4>Evelin Velez</h4></div>
+            <div class="testimonial"><p>"Optimicé mis recursos con su ayuda."</p><h4>Andrea Gómez</h4></div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer fijo en la parte inferior -->
+    <footer>
+        <p>&copy; 2024 Dsvasesoria Contable. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript para Menú Responsive -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.querySelector(".menu-icon");
+            const navLinks = document.querySelector(".nav-links");
+            menuIcon.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+            });
+
+            // Animación de estadísticas
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                counter.innerText = '0';
+                const updateCounter = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const increment = target / 100;
+                    if (count < target) {
+                        counter.innerText = `${Math.ceil(count + increment)}`;
+                        setTimeout(updateCounter, 40);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCounter();
+            });
+        });
+    </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let header = document.querySelector("header");
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 50) {
+                header.classList.add("blue");
+            } else {
+                header.classList.remove("blue");
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
