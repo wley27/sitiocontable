@@ -36,7 +36,7 @@ const detallesServicios = {
         ]
     },
     declaraciones: {
-        titulo: "Declaraciones Fiscales",
+        titulo: "Cumplimiento fiscal y tributario",
         imagen: "imagenes/detalle-impuestos.png",
         servicios: [
         "Declaraciones mensuales y anuales de impuestos.",
@@ -45,7 +45,7 @@ const detallesServicios = {
         ]
     },
     planificacion: {
-        titulo: "Planificación Tributaria",
+        titulo: "Constitucion del SAS",
         imagen: "imagenes/detalle-planificacion.png",
         servicios: [
             { titulo: "Constituimos tu SAS en solo 7 días", detalles: [
