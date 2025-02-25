@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+
 /* Estilos generales */
 * {
     margin: 0;
@@ -7,7 +10,7 @@
 
 /* Body y fondo */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
     color: #333;
@@ -29,7 +32,7 @@ header {
 }
 
 header.blue {
-    background-color: #001f3f;
+    background-color: #a0522d;
 }
 
 /* Logo */
@@ -53,6 +56,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 nav ul li a:hover {
@@ -78,6 +82,7 @@ nav ul li a:hover {
     font-size: 48px;
     margin-bottom: 20px;
     font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .hero p {
@@ -92,8 +97,8 @@ nav ul li a:hover {
 
 .hero .btn {
     display: inline-block;
-    background-color: #003366;
-    color: #fff;
+    background-color:  #f6c8ad;
+    color: #a0522d;
     padding: 10px 20px;
     margin: 5px;
     text-decoration: none;
@@ -102,7 +107,7 @@ nav ul li a:hover {
 }
 
 .hero .btn:hover {
-    background-color: #005b8a;
+    background-color: #ffffff;
 }
 
 /* Sección Servicios */
@@ -115,7 +120,7 @@ nav ul li a:hover {
 #servicios h2 {
     font-size: 36px;
     margin-bottom: 30px;
-    color: #001f3f;
+    color: #a0522d;
 }
 
 .servicios-container {
@@ -138,7 +143,7 @@ nav ul li a:hover {
 
 .servicio h3 {
     font-size: 24px;
-    color: #003366;
+    color: #a0522d;
     margin-bottom: 10px;
 }
 
@@ -176,7 +181,7 @@ nav ul li a:hover {
 
 .testimonial h4 {
     margin-top: 10px;
-    color: #004080;
+    color:  #a0522d;
 }
 
 /* Sección Estadísticas */
@@ -186,14 +191,14 @@ nav ul li a:hover {
     gap: 50px;
     flex-wrap: wrap;
     padding: 50px;
-    background-color: #001f3f;
+    background-color: #a0522d;
     color: white;
     text-align: center;
 }
 
 .stat h3 {
     font-size: 48px;
-    color: #ffc107;
+    color: #ffbe98;
 }
 
 .stat p {
@@ -225,7 +230,7 @@ nav ul li a:hover {
 
 .beneficio i {
     font-size: 40px;
-    color: #004080;
+    color: #a0522d;
     margin-bottom: 10px;
 }
 
@@ -246,7 +251,7 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #001f3f;
+    background-color: #a0522d;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -308,7 +313,7 @@ footer .social-links a:hover {
 nav ul li a.active {
     font-weight: bold;
     color: #fff; /* Color del texto */
-    background-color: #ffc107;; /* Color de fondo del cuadro */
+    background-color: #ffbe98; /* Color de fondo del cuadro */
     padding: 8px 15px; /* Espaciado interno para hacer el cuadro */
     border-radius: 5px; /* Bordes redondeados */
     text-decoration: none; /* Quitar subrayado */
