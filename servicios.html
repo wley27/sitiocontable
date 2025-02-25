@@ -16,52 +16,63 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="servicios.html"class="active">Servicios</a></li>
+                <li><a href="servicios.html" class="active">Servicios</a></li>
                 <li><a href="contacto.html">Contáctenos</a></li>
             </ul>
         </nav>
     </header>
+
     <section class="servicios">
         <h2>Nuestros Servicios</h2>
         <div class="contenedor-servicios">
             <!-- Contabilidad General -->
-            <div class="tarjeta">
+            <div class="tarjeta" onclick="mostrarDetalle('contabilidad')">
                 <img src="imagenes/icono-contabilidad.png" alt="Contabilidad General">
                 <h3>Contabilidad General</h3>
-                <p>Gestión contable completa para tu empresa, asegurando el cumplimiento normativo.</p>
+                <p>Gestión contable completa para tu empresa, asegurando el cumplimiento normativo y la optimización financiera.</p>
             </div>
     
-            <!-- Asesorías Contables Personalizadas -->
-            <div class="tarjeta">
+            <!-- Asesorías Contables -->
+            <div class="tarjeta" onclick="mostrarDetalle('asesoria')">
                 <img src="imagenes/icono-asesoria.png" alt="Asesorías Contables">
                 <h3>Asesorías Contables</h3>
                 <p>Te brindamos asesoría adaptada a las necesidades específicas de tu negocio.</p>
             </div>
         </div>
-    
-        <h2>Servicios Tributarios</h2>
+
         <div class="contenedor-servicios">
             <!-- Declaraciones Tributarias -->
-            <div class="tarjeta">
+            <div class="tarjeta" onclick="mostrarDetalle('declaraciones')">
                 <img src="imagenes/icono-impuestos.png" alt="Declaraciones Tributarias">
-                <h3>Declaraciones Fiscales</h3>
+                <h3>Cumplimiento fiscal y tributario</h3>
                 <p>Declaración y cumplimiento de obligaciones fiscales mensuales, semestrales y anuales.</p>
             </div>
     
             <!-- Planificación Tributaria -->
-            <div class="tarjeta">
+            <div class="tarjeta" onclick="mostrarDetalle('planificacion')">
                 <img src="imagenes/icono-planificacion.png" alt="Planificación Tributaria">
-                <h3>Planificación Tributaria</h3>
-                <p>Te ayudamos a optimizar recursos con estrategias fiscales eficientes y legales.</p>
+                <h3>Constitución de SAS</h3>
+                <p>Crea tu Sociedad por Acciones Simplificadas SAS en Ecuador</p>
             </div>
         </div>
-    
+
         <a href="contacto.html" class="btn-servicios">¡Cotiza tu servicio ahora!</a>
     </section>
-    
-    
+
+    <!-- Sección emergente para mostrar detalles del servicio -->
+    <section class="detalle-servicio" id="detalle-servicio">
+        <div class="contenido-detalle">
+            <button class="btn-cerrar" onclick="cerrarDetalle()">✖</button>
+            <h2 id="titulo-servicio"></h2>
+            <img id="imagen-servicio" src="" alt="Imagen del servicio">
+            <ul id="lista-servicio"></ul>
+        </div>
+    </section>
+
     <footer>
         <p>📞 Contáctanos: <a href="tel:+593987648604">0987648604</a> | 📧 <a href="mailto:dsvasesoriacontable@gmail.com">dsvasesoriacontable@gmail.com</a></p>
     </footer>
+
+    <script src="servicio.js"></script>
 </body>
 </html>
