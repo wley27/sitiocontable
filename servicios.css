@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 /* Estilos generales */
 * {
     margin: 0;
@@ -7,7 +8,7 @@
 
 /* Body y fondo */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
     color: #fff;
@@ -17,7 +18,7 @@ body {
 
 /* Estilos para el header */
 header {
-    background-color: #002b5c;
+    background-color: #a0522d;
     color: white;
     padding: 20px;
     display: flex;
@@ -34,7 +35,7 @@ header {
 
 /* Estilo cuando el header tiene la franja azul */
 header.blue {
-    background-color: #001f3f;
+    background-color: #a0522d;
 }
 
 /* Contenedor del logo */
@@ -71,6 +72,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 header.blue nav ul li a {
@@ -112,6 +114,7 @@ section {
 .hero h2 {
     font-size: 48px;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .hero p {
@@ -127,19 +130,20 @@ section {
 
 /* Sección de servicios */
 .servicios {
-    margin-top: 280px; /* Ajuste para evitar que el header fijo la cubra */
+    margin-top: 215px; /* Ajuste para evitar que el header fijo la cubra */
     text-align: center;
     padding: 50px 20px;
     background-color: #f9f9f9;
-    padding-top: 20x; /* Agrega espacio extra para mejor separación */
+    padding-top: 10x; /* Agrega espacio extra para mejor separación */
    
     
 }
 
 .servicios h2 {
-    color: #002b5c;
+    color: #a0522d;
     margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Contenedor de las tarjetas */
@@ -176,7 +180,7 @@ section {
 
 /* Títulos de las tarjetas */
 .tarjeta h3 {
-    color: #002b5c;
+    color: #a0522d;
     font-size: 22px;
     margin-bottom: 15px;
 }
@@ -191,7 +195,7 @@ section {
 /* Botón de cotización */
 .btn-servicios {
     display: inline-block;
-    background-color: #002b5c;
+    background-color: #f6c8ad;
     color: white;
     padding: 12px 20px;
     border-radius: 5px;
@@ -201,7 +205,7 @@ section {
 }
 
 .btn-servicios:hover {
-    background-color: #004080;
+    background-color: #a0522d;
 }
 
 /* Estilos responsivos */
@@ -227,7 +231,7 @@ section {
 
 /* Estilos del footer */
 footer {
-    background-color: #002244;
+    background-color: #a0522d;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -235,7 +239,7 @@ footer {
     z-index: 0; /* Asegura que no quede encima del contenido */
 }
 footer a {
-    color: #ffdd57;
+    color: #f6c8ad;
     text-decoration: none;
 }
 
@@ -325,7 +329,7 @@ footer a:hover {
 nav ul li a.active {
     font-weight: bold;
     color: #fff; /* Color del texto */
-    background-color: #ffc107;; /* Color de fondo del cuadro */
+    background-color: #ffbe98;; /* Color de fondo del cuadro */
     padding: 8px 15px; /* Espaciado interno para hacer el cuadro */
     border-radius: 5px; /* Bordes redondeados */
     text-decoration: none; /* Quitar subrayado */
@@ -366,7 +370,7 @@ nav ul li a.active {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: rgb(0, 4, 255);
+    background: #d35106;
     color: rgb(255, 255, 255);
     border: none;
     padding: 5px 10px;
@@ -383,7 +387,7 @@ nav ul li a.active {
 
 #lista-servicio li {
     font-size: 16px;
-    color: #002b5c;
+    color: #a0522d;
     margin-bottom: 10px;
     padding-left: 10px;
     list-style: none;
@@ -392,7 +396,7 @@ nav ul li a.active {
 
 #lista-servicio li::before {
     content: "✔";
-    color: green;
+    color: #f9c1a1;
     font-weight: bold;
     margin-right: 10px;
 }
