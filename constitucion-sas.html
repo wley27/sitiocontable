@@ -13,8 +13,10 @@
             <img src="logo.png" alt="Logo de Asesoría Contable">
         </div>
         
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Sobre Nosotros</a></li>
                 <li><a href="servicios.html" class="active">Servicios</a></li>
@@ -22,6 +24,7 @@
             </ul>
         </nav>
     </header>
+    
 
     <section class="detalle-servicio">
         <h2>Constitución de SAS</h2>
@@ -81,6 +84,11 @@
             });
         });
     </script>
-    
+    <script>
+        function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
+
+    </script>
 </body>
 </html>
