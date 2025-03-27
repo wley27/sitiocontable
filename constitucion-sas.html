@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constitución de SAS</title>
+    <link rel="stylesheet" href="constitucion-sas.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo de Asesoría Contable">
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="servicios.html" class="active">Servicios</a></li>
+                <li><a href="contacto.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="detalle-servicio">
+        <h2>Constitución de SAS</h2>
+       
+        <p>Te ayudamos con la creación de tu Sociedad por Acciones Simplificada (SAS) de manera rápida y eficiente.</p>
+
+    
+
+        <h2>¿Cuanto cuesta constituir una empresa de SAS en Ecuador con nosotros?</h2>
+        <div class="precios-container">
+            <div class="precio-box">
+                <p>SAS con 2 o 3 accionistas</p>
+                <span class="precio amarillo">USD 299 más IVA</span>
+            </div>
+            <div class="precio-box">
+                <p>SAS con 4 a 7 accionistas</p>
+                <span class="precio rojo">USD 399 más IVA</span>
+            </div>
+            <div class="precio-box">
+                <p>SAS con un accionista</p>
+                <span class="precio azul">USD 179 más IVA</span>
+            </div>
+        </div>
+        <h2>Tu nueva SAS incluye:</h2>
+<ul class="sas-beneficios">
+    <li>Análisis de documentación a utilizar y solución de problemas en documentación.</li>
+    <li>Gestión de Reserva de Nombre.</li>
+    <li>Selección adecuada de Actividades Económicas para la SAS.</li>
+    <li>Contrato o Acto de Constitución inscrito.</li>
+    <li>Nombramientos inscritos.</li>
+    <li>RUC Habilitado.</li>
+    <li>Carpeta de documentos para abrir cuenta bancaria.</li>
+    <li>Títulos Acción.</li>
+    <li>Libro de Acciones y Accionistas.</li>
+    <li>Guía escrita de trámites posteriores.</li>
+    <li>Asistencia en obtención de firma electrónica.</li>
+    <li><strong>TIPO ARCHIVO</strong> (sólo si no la tienes).</li>
+</ul>
+
+        
+        <a href="contacto.html" class="btn-servicios">Solicitar más información</a>
+    </section>
+
+    <footer>
+        <p>📞 Contáctanos: <a href="tel:+593987648604">0987648604</a> | 📧 <a href="mailto:dsvasesoriacontable@gmail.com">dsvasesoriacontable@gmail.com</a></p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const botonMasInfo = document.querySelector(".boton-info");
+    
+            botonMasInfo.addEventListener("click", function (e) {
+                e.preventDefault();
+                document.body.style.opacity = "0";
+                setTimeout(() => {
+                    window.location.href = botonMasInfo.href;
+                }, 500); // Espera 0.5s antes de redirigir
+            });
+        });
+    </script>
+    
+</body>
+</html>

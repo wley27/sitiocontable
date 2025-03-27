@@ -1,0 +1,278 @@
+/* Reset de estilos y configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuración del body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Para que el footer quede al fondo */
+}
+
+/* Contenedor principal centrado */
+.container {
+    width: 90%; /* Para que se vea bien en todos los dispositivos */
+    max-width: 1100px; /* No se extienda demasiado en pantallas grandes */
+    margin: auto; /* Centra el contenido */
+    padding: 20px;
+    flex-grow: 1; /* Hace que el contenido crezca y empuje el footer hacia abajo */
+}
+
+/* Estilos para la cabecera */
+header {
+    background-color: #a0522d;
+    color: white;
+    padding: 20px 40px; /* Aumenta el padding en los lados */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* Contenedor del logo */
+.logo img {
+    height: 70px;
+    width: auto;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sección principal */
+section {
+    margin-top: 150px; /* Aumenta la distancia desde el header */
+    padding: 20px; /* Añade espacio alrededor */
+}
+h1, h2, h3, p {
+    text-align: left;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto; /* Centrar dentro del contenedor */
+    margin-bottom: 20px;
+}
+/* Lista de beneficios */
+.lista-beneficios {
+    list-style: none;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+.lista-beneficios li {
+    font-size: 18px;
+    padding: 12px;
+    border-left: 4px solid #a0522d;
+    background: #fff3e0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.lista-beneficios li:hover {
+    transform: translateX(10px);
+    background: #ffbe98;
+}
+
+/* Sección de precios */
+.precios {
+    font-size: 18px;
+    color: #555;
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Botón de contacto */
+.btn-servicios {
+    display: block;
+    background: #a0522d;
+    color: white;
+    padding: 12px 20px;
+    margin: 20px auto; /* Centra el botón horizontalmente */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s, transform 0.3s;
+    width: fit-content; /* Ajusta el tamaño según el texto */
+}
+.boton-info:hover {
+    background: #ffbe98;
+    transform: scale(1.05);
+}
+
+/* Footer siempre al fondo */
+footer {
+    background-color: #a0522d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: auto; /* Hace que el footer se mantenga abajo */
+}
+
+/* Responsividad para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%; /* Más ancho en móviles */
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .lista-beneficios li {
+        font-size: 16px;
+    }
+
+    .boton-info {
+        width: 100%; /* Botón ocupa todo el ancho */
+        text-align: center;
+    }
+}
+/* Estilos para la sección de precios */
+.precios-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Aumenta la separación */
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.precio-box {
+    background-color: white;
+    padding: 30px; /* Espaciado interno más cómodo */
+    border-radius: 10px;
+    text-align: center;
+    width: 320px; /* Un poco más de tamaño */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 25px; /* Espacio entre las cajas */
+}
+
+
+.precio-box:hover {
+    transform: translateY(-5px);
+}
+
+.precio-box p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los precios */
+.precio {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Colores específicos */
+.amarillo {
+    background-color: #FFB300;
+}
+
+.rojo {
+    background-color: #E53935;
+}
+
+.azul {
+    background-color: #1E88E5;
+}
+
+/* Responsividad para móviles */
+@media screen and (max-width: 768px) {
+    .precios-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .precio-box {
+        width: 90%; /* Ocupa casi todo el ancho en pantallas pequeñas */
+    }
+}
+/* Estilos para la lista de beneficios */
+.sas-beneficios {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.sas-beneficios li {
+    font-size: 18px;
+    padding: 10px;
+    border-left: 4px solid #a0522d;
+    background: #fff3e0;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sas-beneficios li:hover {
+    transform: translateX(10px);
+    background: #ffbe98;
+}
+
+/* Hacerlo responsivo */
+@media screen and (max-width: 768px) {
+    .sas-beneficios {
+        max-width: 90%;
+    }
+}
+h1, h2, h3, p {
+    text-align: center; /* Centrar en móviles */
+}
+/* Efecto de desvanecimiento */
+body {
+    opacity: 0;
+    animation: fadeIn 0.2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
