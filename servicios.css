@@ -413,3 +413,31 @@ nav ul li a.active {
     font-weight: bold;  /* Asegura que el texto sea visible y en negrita */
     text-align: center;  /* Centra el título */
 }
+.btn-mas-info {
+    display: inline-block;
+    background: #a0522d;
+    color: #fff;
+    padding: 8px 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn-mas-info:hover {
+    background: #ffbe98;
+}
+/* Efecto de desvanecimiento */
+body {
+    opacity: 0;
+    animation: fadeIn 0.2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
