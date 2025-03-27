@@ -24,11 +24,11 @@ body {
     flex-grow: 1; /* Hace que el contenido crezca y empuje el footer hacia abajo */
 }
 
-/* Estilos para la cabecera */
+/* Ajuste general del header */
 header {
     background-color: #a0522d;
     color: white;
-    padding: 20px 40px; /* Aumenta el padding en los lados */
+    padding: 15px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -40,14 +40,13 @@ header {
     right: 0;
 }
 
-
-/* Contenedor del logo */
+/* Logo */
 .logo img {
-    height: 70px;
+    height: 60px;
     width: auto;
 }
 
-/* Menú de navegación */
+/* Menú de navegación en escritorio */
 nav ul {
     list-style: none;
     display: flex;
@@ -66,6 +65,47 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+/* Botón del menú hamburguesa */
+.menu-toggle {
+    display: none; /* Oculto en escritorio */
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* RESPONSIVIDAD para móviles */
+@media screen and (max-width: 768px) {
+    /* Ocultar menú por defecto en móviles */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #a0522d;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostrar botón en móviles */
+    }
+
+    /* Mostrar menú cuando esté activo */
+    .nav-links.active {
+        display: flex;
+    }
+}
+
 
 /* Sección principal */
 section {
