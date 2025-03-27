@@ -103,3 +103,7 @@ function cerrarDetalle() {
 // Asegurar que el modal esté oculto al inicio
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("detalle-servicio").style.display = "none";})
+    
+
+
+    
