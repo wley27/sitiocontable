@@ -319,3 +319,17 @@ nav ul li a.active {
     text-decoration: none; /* Quitar subrayado */
     transition: background 0.3s; /* Animación suave */
 }
+/* Efecto de desvanecimiento */
+body {
+    opacity: 0;
+    animation: fadeIn 0.2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
